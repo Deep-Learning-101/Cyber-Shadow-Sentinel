@@ -88,7 +88,7 @@ Here are three actionable takeaways from the Cyber Shadow Sentinel methodology t
 ### Framework Implementation, Demonstration & Evaluation
 
 * **Cyber Shadow Sentinel Open Source Toolkit:**
-    * Technology choices (Python, Agent/Workflow Frameworks like Dify/n8n, LangChain/AutoGen, etc.).
+    * Technology choices：Python, core AI Agent frameworks (e.g., LangChain, AutoGen), integrated with low-code workflow/app platforms (e.g., Dify, n8n), plus relevant security API libraries, STIX libraries, etc.).
     * Key modules: MCP connectors, base Agent templates, **Multi-Agentic Workflow** engine.
 * **Demonstration Scenarios:**
     * Scenario 1: From Intel Discovery to Internal Risk Confirmation & Alert (TI -> Vuln -> Asset -> Alert).
