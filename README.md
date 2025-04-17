@@ -14,7 +14,7 @@ This methodology and framework aim to empower blue teams by establishing a conti
 
 Our core contribution is a novel **AI Agent-driven methodology** targeting **proactive blue team defense**, implemented via the **Cyber Shadow Sentinel framework**. Key innovative aspects and their benefits include:
 
-* **Unified Blue Team Task Orchestration & Automation:** We pioneer a unified multi-agent framework integrating core blue team functions like TI, ASM, detection support, and reporting. This enables the automation and scaling of complex cross-tool, cross-domain **Multi-Agentic Workflows**, significantly boosting operational efficiency.
+* **Unified Blue Team Task Orchestration & Automation:** We pioneer a unified multi-agent framework integrating core blue team functions like TI, ASM, internal system interfaces (e.g., CMDB, vulnerability databases), and reporting. This enables the automation and scaling of complex cross-tool, cross-domain **Multi-Agentic Workflows**, significantly boosting operational efficiency.
 * **Specialized, Modular AI Agent Collaboration:** We design and utilize specialized, role-based agents (multi-source intel collectors, asset/exposure discovery agents, cross-domain correlation analyzers, risk assessors, report generators) for efficient and scalable task distribution. This modular design allows security teams to flexibly configure and extend framework capabilities based on their needs.
 * **Deep Context Fusion & Actionable Insights (RAG Application):** Applying RAG not just to dark web data, but to intelligence from **all integrated sources** alongside internal data (asset vulnerability, business criticality), enables deep contextual correlation and risk assessment. This provides crucial, explainable insights and produces actionable intelligence tailored for automated response systems (SOAR).
 
@@ -79,7 +79,7 @@ Here are three actionable takeaways from the Cyber Shadow Sentinel methodology t
 * **Multi-Agent Core:**
     * *Collection Agents:* Dark Web, Clearnet, Vulnerability/IOC, ASM, Internal Monitoring (Logs/Alerts), etc.
     * *Analysis & Correlation Agent:* Cross-domain information fusion, RAG contextual enrichment, risk assessment engine.
-    * *Orchestration & Reporting Agent:* **Multi-Agentic Workflow** management, task scheduling, multi-format report generation (Alerts, Summaries, STIX).
+    * *Orchestration & Reporting Agent:* **Multi-Agentic Workflows** management, task scheduling, multi-format report generation (Alerts, Summaries, STIX).
 * **Knowledge & Context Layer:**
     * Integrating external knowledge bases (CVE, ATT&CK, Threat Actor DBs).
     * Connecting to internal knowledge (Asset DB, Business Info).
@@ -89,7 +89,7 @@ Here are three actionable takeaways from the Cyber Shadow Sentinel methodology t
 
 * **Cyber Shadow Sentinel Open Source Toolkit:**
     * Technology choices：Python, core AI Agent frameworks (e.g., LangChain, AutoGen), integrated with low-code workflow/app platforms (e.g., Dify, n8n), plus relevant security API libraries, STIX libraries, etc.).
-    * Key modules: MCP connectors, base Agent templates, **Multi-Agentic Workflow** engine.
+    * Key modules: MCP connectors, base Agent templates, **Multi-Agentic Workflows** engine.
 * **Demonstration Scenarios:**
     * Scenario 1: From Intel Discovery to Internal Risk Confirmation & Alert (TI -> Vuln -> Asset -> Alert).
     * Scenario 2: Attack Surface Change Monitoring & Automated Risk Assessment (ASM -> CVE -> Context -> Report).
@@ -125,5 +125,5 @@ However, to facilitate adoption and further research by the community, we will b
 Yes, the research presentation will include a live demonstration showcasing key aspects of the **Cyber Shadow Sentinel methodology** integrating blue team tasks:
 
 * **Cross-Domain Intel Correlation & Risk Assessment:** Demonstrating how the framework automatically ingests (simulated) multi-source inputs (e.g., a dark web alert + an ASM finding), triggers the analysis agent to use RAG to fuse CVE info and (simulated) internal asset data, performing a risk assessment.
-* **Multi-Agentic Workflow Visualization:** Visually tracing a simplified but typical blue team task (e.g., threat assessment) as data moves between different agents (Collection -> Analysis -> Reporting) within the **Multi-Agentic Workflow**.
+* **Multi-Agentic Workflows Visualization:** Visually tracing a simplified but typical blue team task (e.g., threat assessment) as data moves between different agents (Collection -> Analysis -> Reporting) within the **Multi-Agentic Workflows**.
 * **SOAR-Ready Actionable Output:** Displaying the final structured report (e.g., STIX format) generated, enriched with context and risk scoring, highlighting its readiness for ingestion by SOAR platforms to trigger automated response playbooks.
